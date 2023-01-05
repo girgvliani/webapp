@@ -7,7 +7,6 @@ class design{
 
 
     namesToNumbers(){
-        console.log('n2n')
         var numberString = (this.shape);
         numberString += this.size;
         numberString += this.colour;
@@ -16,26 +15,151 @@ class design{
 
 
     choose(string){
-        console.log("choose")
-        console.log(string)
-        switch(string){
-            case '222':
-                this.updateDisplay('D:/user mine/desktop/JS project/webapp/img/5/des_5.png')
-                break;
-            case '322':
-                this.updateDisplay('D:/user mine/desktop/JS project/webapp/img/3/des_5.png')
-                break;
-        }
-    }
+                switch(string.charAt(2)){
+                    case '1':
+                        switch(string.charAt(0)){
+                            case '1':
+                                this.updateDisplay('img/images/Bone color Bronse.svg')
+                                break;
+                            case '2':
+                                this.updateDisplay('img/images/Heart color Bronse.svg')
+                                break;
+                            case '3':
+                                this.updateDisplay('img/images/Star color Bronse.svg')
+                                break;
+                            case '4':
+                                this.updateDisplay('img/images/Leg color Bronse.svg')
+                                break;
+                            case '5':
+                                this.updateDisplay('img/images/Ball color Bronse.svg')
+                                break;
+                            case '6':
+                                this.updateDisplay('img/images/Almost ball color Bronse.svg')
+                                break;
+                        }
+                        break;
+                    case '2':
+                        switch(string.charAt(0)){
+                            case '1':
+                                this.updateDisplay('img/images/Bone color Gold.svg')
+                                break;
+                            case '2':
+                                this.updateDisplay('img/images/Heart color Gold.svg')
+                                break;
+                            case '3':
+                                this.updateDisplay('img/images/Star color Gold.svg')
+                                break;
+                            case '4':
+                                this.updateDisplay('img/images/Leg color Gold.svg')
+                                break;
+                            case '5':
+                                this.updateDisplay('img/images/Ball color Gold.svg')
+                                break;
+                            case '6':
+                                this.updateDisplay('img/images/Almost ball color Gold.svg')
+                                break;
+                        }
+                        break;
+                    case '3':
+                        switch(string.charAt(0)){
+                            case '1':
+                                this.updateDisplay('img/images/Bone color Black.svg')
+                                break;
+                            case '2':
+                                this.updateDisplay('img/images/Heart color Black.svg')
+                                break;
+                            case '3':
+                                this.updateDisplay('img/images/Star color Black.svg')
+                                break;
+                            case '4':
+                                this.updateDisplay('img/images/Leg color Black.svg')
+                                break;
+                            case '5':
+                                this.updateDisplay('img/images/Ball color Black.svg')
+                                break;
+                            case '6':
+                                this.updateDisplay('img/images/Almost ball color Black.svg')
+                                break;
+                        }
+                        break;
+                    case '4':
+                        switch(string.charAt(0)){
+                            case '1':
+                                this.updateDisplay('img/images/Bone color Blue.svg')
+                                break;
+                            case '2':
+                                this.updateDisplay('img/images/Heart color Blue.svg')
+                                break;
+                            case '3':
+                                this.updateDisplay('img/images/Star color Blue.svg')
+                                break;
+                            case '4':
+                                this.updateDisplay('img/images/Leg color Blue.svg')
+                                break;
+                            case '5':
+                                this.updateDisplay('img/images/Ball color Blue.svg')
+                                break;
+                            case '6':
+                                this.updateDisplay('img/images/Almost ball color Blue.svg')
+                                break;
+                        }
+                        break;
+                    case '5':
+                        switch(string.charAt(0)){
+                            case '1':
+                                this.updateDisplay('img/images/Bone color Red.svg')
+                                break;
+                            case '2':
+                                this.updateDisplay('img/images/Heart color Red.svg')
+                                break;
+                            case '3':
+                                this.updateDisplay('img/images/Star color Red.svg')
+                                break;
+                            case '4':
+                                this.updateDisplay('img/images/Leg color Red.svg')
+                                break;
+                            case '5':
+                                this.updateDisplay('img/images/Ball color Red.svg')
+                                break;
+                            case '6':
+                                this.updateDisplay('img/images/Almost ball color Red.svg')
+                                break;
+                        }
+                        break;
+                    case '6':
+                        switch(string.charAt(0)){
+                            case '1':
+                                this.updateDisplay('img/images/Bone color Pink.svg')
+                                break;
+                            case '2':
+                                this.updateDisplay('img/images/Heart color Pink.svg')
+                                break;
+                            case '3':
+                                this.updateDisplay('img/images/Star color Pink.svg')
+                                break;
+                            case '4':
+                                this.updateDisplay('img/images/Leg color Pink.svg')
+                                break;
+                            case '5':
+                                this.updateDisplay('img/images/Ball color Pink.svg')
+                                break;
+                            case '6':
+                                this.updateDisplay('img/images/Almost ball color Pink.svg')
+                                break;
+                        }
+                        break;
+                }
+            }
+            
     
     updateDisplay(filename){
-        console.log('display')
+        console.log(filename)
         document.getElementById('data-design').src = filename
     }
 
 }
 
-const designVariants = new design(document.getElementById('shape2').title, document.getElementById('size2').title, document.getElementById('colour2').title)
+const designVariants = new design(document.getElementById('shape1').title, document.getElementById('size1').title, document.getElementById('colour_gray').title)
 
 const numberShapeButtons = document.querySelectorAll('[shape-button]')
 const numberSizeButtons = document.querySelectorAll('[size-button]')
