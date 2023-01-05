@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Dog Chains</title>
+    <link rel="stylesheet" type="text/css" href="D:\user mine\desktop\JS project\scripts\styles\style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <img src="D:\user mine\desktop\JS project\img\logo\logo-mobile.svg" class="logo" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <div class="shape_container">
+        <div    class="second_choice">
+            <button onclick="displayDesign('des_5.png')"><img src="D:\user mine\desktop\JS project\img\2\shape\1.svg" alt="Shape 2" data-numbers></button>
+        </div>
+        <div class="third_choice">
+            <button onclick="displayDesign('des_3.png')"><img src="D:\user mine\desktop\JS project\img\3\shape\1.svg" alt="Shape 3" data-numbers></button>
+        </div>
+    </div>
+    <div class="result_container">
+        <div class="design_container">
+            <img src="D:\user mine\desktop\JS project\img\2\des_5.png" data-design>
+        </div>
+    </div>
+    <script>
+        function displayDesign(filename){
+            let design = document.querySelector('[data-design]');
+            design.setAttribute("src", filename)
+        }
+    </script>
+</body>
