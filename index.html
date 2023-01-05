@@ -2,7 +2,7 @@
 <head>
     <title>Dog Chains</title>
     <link rel="stylesheet" type="text/css" href="scripts\styles\style.css">
-    <script src="scripts/JS/script.js"></script>
+    <script src="scripts/JS/script.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -13,16 +13,50 @@
         </div>
     </div>
     <div class="shape_container">
-        <div    class="second_choice">
-            <button onclick="displayDesign('des_5.png')"><img src="D:\user mine\desktop\JS project\img\2\shape\1.svg" alt="Shape 2" data-numbers></button>
-        </div>
-        <div class="third_choice">
-            <button onclick="displayDesign('des_3.png')"><img src="D:\user mine\desktop\JS project\img\3\shape\1.svg" alt="Shape 3" data-numbers></button>
-        </div>
+        <button
+                id = 'shape2'
+                title="2"
+                shape-button>
+                <img  src="D:\user mine\desktop\JS project\img\2\shape\1.svg"  shape-number>
+        </button>
+        <button 
+                id = 'shape3'
+                title="3"
+                shape-button>
+                <img src="D:\user mine\desktop\JS project\img\3\shape\1.svg" shape-number>
+        </button>
+    </div>
+    <div class="size_container">
+        <button
+                id = "size2"
+                title = "2"
+                size-button>
+                <img src="" size-number>
+        </button>
+        <button 
+                id = "size3"
+                title = "3"       
+                size-button>
+                <img src="" size-number>
+        </button>
+    </div>
+    <div class="colour_container">
+        <button 
+                id = "colour2"
+                title = "2"
+                colour-button>
+                <img id = 'colour2' src="" colour-number>
+        </button>
+        <button 
+                id = "colour3"
+                title = "3"
+                colour-button>
+                <img  src="" colour-number>
+        </button>
     </div>
     <div class="result_container">
         <div class="design_container">
-            <img src="des_5.png" data-design>
+            <img id = 'data-design' src="des_5.png" >
         </div>
     </div>
 </body>
