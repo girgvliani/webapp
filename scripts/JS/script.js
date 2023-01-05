@@ -1,2 +1,4 @@
-const buttons = document.querySelectorAll('[data-button]')
-const design = document.querySelectorAll('[data-design]')
+function displayDesign(filename){
+    let design = document.querySelector('[data-design]');
+    design.setAttribute("src", filename)
+}
